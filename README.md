@@ -22,3 +22,6 @@ Linux/Mac
 ```shell
 python3 app.py
 ```
+
+
+#start - ["Taklif yoki shikoyat","Biz haqimizda"]

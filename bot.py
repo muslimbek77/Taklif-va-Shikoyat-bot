@@ -29,9 +29,11 @@ async def off_startup_notify(bot: Bot):
 def setup_middlewares(dispatcher: Dispatcher, bot: Bot) -> None:
     """MIDDLEWARE"""
     from middlewares.throttling import ThrottlingMiddleware
+    # from middlewares.checksub import BigBrother
 
     # Spamdan himoya qilish uchun klassik ichki o'rta dastur. So'rovlar orasidagi asosiy vaqtlar 0,5 soniya
     dispatcher.message.middleware(ThrottlingMiddleware(slow_mode_delay=0.5))
+    
 
 
 
@@ -39,7 +41,7 @@ async def main() -> None:
     await set_default_commands(bot)
     db.create_table_users()
     db.create_table_channels()
-    setup_middlewares(dispatcher=dp, bot=bot)
+    # setup_middlewares(dispatcher=dp, bot=bot)
     await dp.start_polling(bot)
 
 
