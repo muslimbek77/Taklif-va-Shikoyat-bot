@@ -10,6 +10,7 @@ taklif_btn = ReplyKeyboardMarkup(
             KeyboardButton(text="📩 Murojaat"),
             KeyboardButton(text="ℹ️ Biz haqimizda"),
         ],
+        [KeyboardButton(text="🌐 Ijtimoiy tarmoqlarda biz")],
         [KeyboardButton(text="📍 Bizning Manzil")],
         
     ],

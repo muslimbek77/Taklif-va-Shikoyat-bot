@@ -11,28 +11,45 @@ async def taklif_yubor(message:Message,state:FSMContext):
     await state.set_state(OfferState.offer)
 
 @dp.message(OfferState.offer, F.text)
-async def qabul(message:Message,state:FSMContext):
+async def qabul(message: Message, state: FSMContext):
     text = message.text
     msg = f"📌 Yangi xabar\n"
     msg += f"<a href='tg://user?id={message.from_user.id}'>{message.from_user.full_name}</a>\n\n"
     msg += f"{message.text}"
-    await bot.send_message(chat_id=MY_GROUP,text=msg,parse_mode='html')
 
-    await message.answer("Sizning murojaatingiz qabul qilindi. Biz uni tez orada ko'rib chiqamiz...")
+    # Foydalanuvchining ID sini yuborilayotgan xabarga bog‘lab qo‘yish
+    await bot.send_message(
+        chat_id=MY_GROUP,
+        text=msg,
+        parse_mode='HTML'
+    )
+
+    await message.answer("📩 Sizning murojaatingiz qabul qilindi. Tez orada javob beramiz.")
 
 @dp.message(F.reply_to_message, F.text)
-async def answer_offer(message:Message):
-    
-    chat_id = message.reply_to_message.entities[0].user.id
-    try:
-        await bot.send_message(chat_id=chat_id,text=message.text)
-        await message.answer("Xabaringiz foydalanuvchiga yuborildi...")
-    except:
-        await message.answer("Xabaringiz foydalanuvchiga yuborilmadi...")
+async def answer_offer(message: Message):
+    if message.reply_to_message.text and message.reply_to_message.text.startswith("📩 Admindan xabar:"):
+        full_name = message.from_user.full_name
+        user_id = message.from_user.id
+
+        msg = f"✉️ *Foydalanuvchidan javob:*\n"
+        msg += f"[{full_name}](tg://user?id={user_id})\n\n"
+        msg += f"{message.text}"
+
+        await bot.send_message(chat_id=MY_GROUP, text=msg, parse_mode="Markdown")
+    else:
+        chat_id = message.reply_to_message.entities[0].user.id
+        try:
+            await bot.send_message(
+                chat_id=chat_id,
+                text=f"📩 *Admindan xabar:*\n\n{message.text}",
+                parse_mode="Markdown"
+            )
+            await message.answer("✅ Xabaringiz foydalanuvchiga yuborildi.")
+        except:
+            await message.answer("❌ Xabaringiz foydalanuvchiga yuborilmadi.")
 
 
-
-from aiogram.types import FSInputFile
 
 @dp.message(lambda msg: msg.text == "💻 Backend")
 async def send_backend_course(message: Message):
