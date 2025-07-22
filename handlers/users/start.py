@@ -2,6 +2,7 @@ from aiogram.types import Message
 from loader import dp,db, ADMINS
 from aiogram.filters import CommandStart
 from keyboard_buttons.taklif_button import taklif_btn
+
 @dp.message(CommandStart())
 async def start_command(message:Message):
     full_name = message.from_user.full_name
@@ -12,3 +13,6 @@ async def start_command(message:Message):
     except:
         await message.answer(text="Assalomu alaykum",reply_markup=taklif_btn)
 
+@dp.message(lambda message: message.text == "⬅️ Asosiy menyuga qaytish")
+async def back_to_main_menu(message: Message):
+    await message.answer("🏠 Asosiy menyuga qaytdingiz.", reply_markup=taklif_btn)
