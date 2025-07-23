@@ -7,7 +7,7 @@ from data.config import MY_GROUP
 
 @dp.message(F.text == "📩 Murojaat")
 async def taklif_yubor(message:Message,state:FSMContext):
-    await message.answer("Murojaatingiz matnini yuboring...")
+    await message.answer("Murojaatingiz matnini kiriting...")
     await state.set_state(OfferState.offer)
 
 @dp.message(OfferState.offer, F.text)
