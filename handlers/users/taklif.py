@@ -67,11 +67,11 @@ OOP, Fayllar bilan ishlash, Qiziqarli loyihalar
 
 3-oy: 🟠 Telegram Bot
 Aiogram va Telebot asosida 15+ bot yaratish
-750 000 so‘m
+700 000 so‘m
 
 4-oy: 🔵 Django Web
 Web sayt, portfolio, GitHub, Ma’lumotlar bazasi, 5+ Web sayt
-800 000 so‘m
+750 000 so‘m
 
 🎯 Natija: “Strong Junior” daraja
 🎓 Xalqaro darajadagi Sertifikat olish imkoniyati bor"""
