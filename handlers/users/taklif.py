@@ -63,17 +63,17 @@ Algoritmlash, Python dasturlash asoslari (basic)
 
 2-oy: 🔵 Python Advanced
 OOP, Fayllar bilan ishlash, Qiziqarli loyihalar
-650 000 so‘m
+<i>650 000 so‘m</i>
 
 3-oy: 🟠 Telegram Bot
 Aiogram va Telebot asosida 15+ bot yaratish
-700 000 so‘m
+<i>700 000 so‘m</i>
 
 4-oy: 🔵 Django Web
 Web sayt, portfolio, GitHub, Ma’lumotlar bazasi, 5+ Web sayt
-750 000 so‘m
+<i>750 000 so‘m</i>
 
 🎯 Natija: “Strong Junior” daraja
 🎓 Xalqaro darajadagi Sertifikat olish imkoniyati bor"""
     
-    await message.answer_photo(photo=photo, caption=caption)
+    await message.answer_photo(photo=photo, caption=caption,parse_mode="html")
