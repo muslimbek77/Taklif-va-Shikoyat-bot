@@ -55,7 +55,7 @@ async def answer_offer(message: Message):
 @dp.message(lambda msg: msg.text == "💻 Backend")
 async def send_backend_course(message: Message):
     photo = "https://i.pinimg.com/736x/12/8e/20/128e2068222c55c941e4342e851d831d.jpg"  # Rasm yo'lini to'g'rilang
-    caption = """*🖥 Backend Dasturlash (Python) Kursi*
+    caption = """<b>🖥 Backend Dasturlash (Python) Kursi</b>
 
 1-oy: 🟠 Python Asoslari
 Algoritmlash, Python dasturlash asoslari (basic)
