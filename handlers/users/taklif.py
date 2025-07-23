@@ -12,6 +12,7 @@ async def taklif_yubor(message:Message,state:FSMContext):
 
 @dp.message(OfferState.offer, F.text)
 async def qabul(message: Message, state: FSMContext):
+    await state.clear()
     text = message.text
     msg = f"📌 Yangi xabar\n"
     msg += f"<a href='tg://user?id={message.from_user.id}'>{message.from_user.full_name}</a>\n\n"
