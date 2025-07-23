@@ -1,0 +1,30 @@
+name: Deploy to Ubuntu Server
+
+on:
+  push:
+    branches: [ master ]  # master branchga push bo'lsa
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Deploy via SSH
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.SERVER_IP }}
+        username: ${{ secrets.SERVER_USER }}
+        key: ${{ secrets.SERVER_SSH_KEY }}
+        script: |
+          cd /www/wwwroot/Taklif-va-Shikoyat-bot/
+          git pull origin master
+
+          source venv/bin/activate
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+          sudo systemctl daemon-reload
+          sudo systemctl restart aiogrambot.service
