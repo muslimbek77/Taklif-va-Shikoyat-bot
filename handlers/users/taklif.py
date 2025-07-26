@@ -319,3 +319,38 @@ async def graphic_designer(message:Message):
 """
 
     await message.answer_photo(photo=photo,caption=caption,parse_mode="HTML")
+
+
+@dp.message(F.text == "🎨 Frontend")
+async def frontend_course(message:Message):
+    photo = "https://wallpapercave.com/wp/wp9641838.jpg"
+
+    caption = """🎓 <b>Full Frontend va WordPress Kursi (6 oy)</b>
+
+🧩 <b>1-bosqich (1 oy) — WordPress (No Coding)</b>
+Hosting va domen bilan ishlash
+Yangilik sayti (kun.uz kabi) yaratish
+Landing page tayyorlash
+2 ta amaliy loyiha
+💰 <b>Narxi:</b> 650 000 so‘mdan
+
+💻 <b>2-bosqich (2–2.5 oy) — HTML, CSS, JavaScript</b>
+Strukturali sahifa yaratish
+Dizayn va interfeyslar
+JavaScript asoslari
+2 ta amaliy loyiha
+💰 <b>Narxi:</b> 700 000 so‘mdan
+
+⚛️ <b>3-bosqich (3–3.5 oy) — React JS, Tailwind CSS, Supabase</b>
+Murakkab frontend ilovalar
+Internet magazin loyihasi
+Supabase bilan backend ulash
+Professional web saytlar yaratish
+💰 <b>Narxi:</b> 700 000 so‘mdan
+
+🚀 <b>Yakuni (1 oy) — Amaliyot</b>
+Real mijozlar bilan ishlash
+Portfolio yig‘ish
+"""
+
+    await message.answer_photo(photo=photo,caption=caption,parse_mode="HTML")
