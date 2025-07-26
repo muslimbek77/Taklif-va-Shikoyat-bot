@@ -81,50 +81,51 @@ Web sayt, portfolio, GitHub, Ma’lumotlar bazasi, 5+ Web sayt
 
 @dp.message(F.text == "🇸🇦 Arab tili")
 async def send_arab_course(message: Message):
-    text = """<b>🇸🇦 Arab tili kursi (A1 dan B2 gacha)</b>
+    text = """
+<b>🇸🇦 Arab tili kursi (A1 dan B2 gacha)</b>
 
 ⸻
 
-<b>🟠 A1 – Arab tili asoslari (3 oy)</b><br>
-🔤 Alifbo, oddiy gaplar, o‘zini tanishtirish, asosiy grammatika, kundalik suhbatlar<br>
+<b>🟠 A1 – Arab tili asoslari (3 oy)</b>
+🔤 Alifbo, oddiy gaplar, o‘zini tanishtirish, asosiy grammatika, kundalik suhbatlar
 💰 <b>330 000 so‘m</b>
 
 ⸻
 
-<b>🔵 A2 – Kundalik suhbat va muloqot (3 oy)</b><br>
-📌 O‘tgan zamon, hayotiy vaziyatlar, xat va email yozish, eshitish ko‘nikmalari<br>
+<b>🔵 A2 – Kundalik suhbat va muloqot (3 oy)</b>
+📌 O‘tgan zamon, hayotiy vaziyatlar, xat va email yozish, eshitish ko‘nikmalari
 💰 <b>330 000 so‘m</b>
 
 ⸻
 
-<b>🟠 B1 – Kasb va o‘qish uchun til (3 oy)</b><br>
-🗂 Grammatikani chuqurlashtirish, taqdimot tayyorlash, rezyume va motivatsion xat yozish, og‘zaki nutqni rivojlantirish<br>
+<b>🟠 B1 – Kasb va o‘qish uchun til (3 oy)</b>
+🗂 Grammatikani chuqurlashtirish, taqdimot tayyorlash, rezyume va motivatsion xat yozish, og‘zaki nutqni rivojlantirish
 💰 <b>380 000 so‘m</b>
 
 ⸻
 
-<b>🔵 B2 – Xalqaro darajadagi muloqot (3 oy)</b><br>
-💬 Murakkab grammatik mavzular, yozma va og‘zaki nutq, rasmiy va norasmiy uslubdagi muloqot<br>
+<b>🔵 B2 – Xalqaro darajadagi muloqot (3 oy)</b>
+💬 Murakkab grammatik mavzular, yozma va og‘zaki nutq, rasmiy va norasmiy uslubdagi muloqot
 💰 <b>380 000 so‘m</b>
 
 ⸻
 
-<b>🎓 Imtihonga tayyorgarlik (2 oy)</b><br>
-📝 Model testlar, imtihon simulyatsiyasi, strategiyalar, individual xatolar ustida ishlash<br>
+<b>🎓 Imtihonga tayyorgarlik (2 oy)</b>
+📝 Model testlar, imtihon simulyatsiyasi, strategiyalar, individual xatolar ustida ishlash
 💰 <b>450 000 so‘m</b>
 
 ⸻
 
-<b>📌 Davomiyligi:</b> 14 oy<br>
-<b>🎯 Natija:</b> Chet elda o‘qish va ishlash uchun kuchli B1 va B2 darajasi<br>
+<b>📌 Davomiyligi:</b> 14 oy
+<b>🎯 Natija:</b> Chet elda o‘qish va ishlash uchun kuchli B1 va B2 darajasi
 <b>🎓 Sertifikatlar:</b> Goethe, Milliy CEFR va At Tanal
 
 ⸻
 
-<b>📚 Darslar kimlar uchun:</b><br>
-👶 7–14 yosh – alohida guruhlar<br>
-🧑 14–45 yosh – alohida guruhlar<br>
+<b>📚 Darslar kimlar uchun:</b>
+👶 7–14 yosh – alohida guruhlar
+🧑 14–45 yosh – alohida guruhlar
 👴 45–100 yosh – alohida metodika va darsliklar bilan
 """
-    
-    await message.answer(text=text,parse_mode="html")
+
+    await message.answer(text, parse_mode="HTML")
