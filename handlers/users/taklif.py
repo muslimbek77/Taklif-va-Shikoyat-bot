@@ -282,3 +282,40 @@ async def german_course(message:Message):
 🎓 <i>Goethe, Milliy, Telc, ecl yoki ÖSD xalqaro sertifikat olish imkoniyati mavjud!</i>
 """
     await message.answer(text=text, parse_mode="HTML")
+
+
+@dp.message(F.text == "🖌️ Grafik Dizayner")
+async def graphic_designer(message:Message):
+    photo = "https://artcraft.media/img/article/824x464/d92c1e61cd380fca490b7dc72f795b42.jpg"
+
+    caption = """🎨 <b>Grafik Dizayn Kursi (6 oy)</b>
+
+<b>🟢 1-bosqich (2 oy) — Adobe Photoshop</b>
+• Photoshop interfeysi bilan ishlash
+• Rang, kontrast va balansni sozlash
+• Foto montaj va kompozitsiya yaratish
+• Social media postlar dizayni
+• Vizitka va flyer tayyorlash
+• Tipografiya asoslari
+💰 580 000 so‘mdan
+
+<b>🟢 2-bosqich (2 oy) — Adobe Illustrator</b>
+• Illustrator interfeysi bilan ishlash
+• Vektor vs raster tushunchalari
+• Icon dizayni
+• Reklama banner dizayni
+• Poligrafiya
+• Qadoq dizayni
+💰 680 000 so‘mdan
+
+<b>🟢 3-bosqich (2 oy) — Logo va Branding</b>
+• Logo sketching (qalamskizlar)
+• Wordmark, lettermark, abstract logo yaratish
+• Ranglar psixologiyasi (color psychology)
+• Branding mockup tayyorlash
+• Brandbook yaratish
+• Mijoz bilan ishlash va brief olish
+💰 880 000 so‘mdan
+"""
+
+    await message.answer_photo(photo=photo,caption=caption,parse_mode="HTML")
