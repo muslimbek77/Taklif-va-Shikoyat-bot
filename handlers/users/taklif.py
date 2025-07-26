@@ -292,10 +292,10 @@ async def graphic_designer(message:Message):
 
 <b>🟢 1-bosqich (2 oy) — Adobe Photoshop</b>
 • Photoshop interfeysi bilan ishlash
-• Rang, kontrast va balansni sozlash
+• Rasm ranglari, kontrast va balansni sozlash
 • Foto montaj va kompozitsiya yaratish
 • Social media postlar dizayni
-• Vizitka va flyer tayyorlash
+• Vizitka va flayer tayyorlash
 • Tipografiya asoslari
 💰 580 000 so‘mdan
 
@@ -309,7 +309,7 @@ async def graphic_designer(message:Message):
 💰 680 000 so‘mdan
 
 <b>🟢 3-bosqich (2 oy) — Logo va Branding</b>
-• Logo sketching (qalamskizlar)
+• Logo sketching (qalamda eskizlar)
 • Wordmark, lettermark, abstract logo yaratish
 • Ranglar psixologiyasi (color psychology)
 • Branding mockup tayyorlash
