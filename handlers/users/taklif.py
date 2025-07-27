@@ -418,3 +418,45 @@ Ishtirokchi sahna va kamera qarshisida ishonchli, kreativ va professional tarzda
 
 🎓 Kurs yakunida Renessans Academy tomonidan rasmiy sertifikat taqdim etiladi, bu sizning malakangizni tasdiqlaydi va portfoliongizda kuchli asos bo‘ladi."""
     await message.answer(text=text)
+
+@dp.message(F.text == "🎯 Target (Reklama Sozlash)")
+async def target_course(message:Message):
+    text = """Target (Reklama Sozlash) 1 oylik Amaliy Kurs
+📍 Renessans Academy tomonidan tashkil etilgan amaliy o‘quv dasturi
+💸 Narxi: 1 500 000 so‘m (to‘liq 1 oy)
+🗓 Darslar haftasiga 6 kun — intensiv va natijaga yo‘naltirilgan yondashuv
+🎓 Kurs yakunida rasmiy sertifikat taqdim etiladi
+
+⸻
+
+📌 Kurs haqida qisqacha:
+
+Ushbu 1 oylik “Target” kursi — sizni 0 dan boshlab, Facebook va Instagram reklamalarini mustaqil tarzda professional sozlash darajasiga olib chiqadi. Kurs davomida siz real kampaniyalar ustida ishlaysiz, mijoz topish, kontent va strategiyani qanday tanlashni o‘rganasiz.
+
+📚 Kurs muallifi:
+4 yillik tajribaga ega targetolog, 15+ ta yirik (gigant) loyihalarni muvaffaqiyatli yakunlagan. Real natijalar, strategik yondashuv va amaliy bilimlar asosida dars beradi.
+
+⸻
+
+🔹 Nimalarni o‘rganasiz?
+
+• Facebook Ads Manager bilan ishlash
+• Pixel o‘rnatish va konversiyani kuzatish
+• Ideal auditoriyani aniqlash va sozlash
+• Kreativ reklamalar va A/B testing
+• Reklama byudjetini to‘g‘ri taqsimlash
+• Natijalarni tahlil qilish va optimallashtirish
+
+⸻
+
+🎁 Bonus:
+• Portfolio uchun real reklama kampaniyasi
+• Faol ishtirokchilarga Renessans Agency orqali ish takliflari
+
+⸻
+
+🎯 Natija:
+1 oy ichida siz mustaqil ishlay oladigan, haqiqiy mijozlar bilan ishlashga tayyor junior targetologga aylanasiz.
+
+🎓 Rasmiy sertifikat sizning bilim va ko‘nikmalaringizni tasdiqlaydi."""
+    await message.answer(text=text)
