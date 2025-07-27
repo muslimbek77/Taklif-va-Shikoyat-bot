@@ -357,9 +357,9 @@ Portfolio yig‘ish
 
 
 
-@dp.message(F.text == "🎭 Face Brend (Shaxsiy Brend) Kursi")
+@dp.message(F.text == "🎭 Shaxsiy Brend (Face brand)")
 async def face_brand_course(message:Message):
-    text = """🎭 Face Brend (Shaxsiy Brend) Kursi
+    text = """🎭 Shaxsiy Brend (Face brand) Kursi
 📍 Renessans Academy tomonidan tashkil etilgan amaliy va chuqurlashtirilgan kurs
 💸 Kurs narxi (to‘liq 5 oy): 1 500 000 so‘m
 🗓 Darslar haftasiga 6 kun davom etadi — intensiv, natijaga yo‘naltirilgan yondashuv
@@ -369,7 +369,7 @@ async def face_brand_course(message:Message):
 
 📌 Kurs haqida umumiy ma’lumot:
 
-“Face Brend” kursi — bu sizning nutq, aktyorlik va kontent yaratuvchanligingizni rivojlantirish orqali kuchli shaxsiy brendga aylanish imkonini beruvchi dastur. Kurs sahna va kamera oldida ishonchli chiqish, ijtimoiy tarmoqlarda sifatli kontent yaratish hamda o‘z uslubingizni topishga yo‘naltirilgan.
+“Face brand” kursi — bu sizning nutq, aktyorlik va kontent yaratuvchanligingizni rivojlantirish orqali kuchli shaxsiy brendga aylanish imkonini beruvchi dastur. Kurs sahna va kamera oldida ishonchli chiqish, ijtimoiy tarmoqlarda sifatli kontent yaratish hamda o‘z uslubingizni topishga yo‘naltirilgan.
 
 📚 Kurs muallifi:
 Oliy ma’lumotli aktyor, 7 yillik aktyorlik va nutq texnikasi bo‘yicha tajriba, 4 yillik Face Brend yo‘nalishida faol amaliyotga ega.
