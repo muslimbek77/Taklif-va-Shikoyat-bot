@@ -1,4 +1,5 @@
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
+from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 taklif_btn = ReplyKeyboardMarkup(
     keyboard=[
@@ -33,4 +34,14 @@ our_course_btn = ReplyKeyboardMarkup(
     ],
     resize_keyboard=True,
     input_field_placeholder="👇 Kurslardan birini tanlang"
+)
+
+
+
+social_keyboard = InlineKeyboardMarkup(
+    inline_keyboard=[
+        [InlineKeyboardButton(text="📱 Telegram", url="https://t.me/Renessans_Uzbekistan3")],
+        [InlineKeyboardButton(text="📸 Instagram", url="https://www.instagram.com/3renessans_uzbekistan")],
+        [InlineKeyboardButton(text="▶️ YouTube", url="https://www.youtube.com/@3RenessansUzbekistan")]
+    ]
 )
