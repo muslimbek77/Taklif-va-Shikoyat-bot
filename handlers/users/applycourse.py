@@ -8,7 +8,7 @@ from data.config import MY_GROUP
 
 @dp.callback_query(F.data.startswith("apply_"))
 async def start_application(call: CallbackQuery, state: FSMContext):
-    course = call.data.replace("apply_", "")  
+    course = call.data.replace("apply_", "") 
     await state.update_data(course=course)
 
     await call.message.answer("👤 Ism familiyangizni kiriting:")
@@ -50,7 +50,7 @@ async def finish_application(message: Message, state: FSMContext):
     data = await state.get_data()
 
     text = (
-        "📝 <b>Backend kursiga yangi ariza:</b>\n\n"
+        f"📝 <b>{data['course']} yangi ariza:</b>\n\n"
         f"👤 Ism: {data['full_name']}\n"
         f"📅 Yosh: {data['age']}\n"
         f"📞 Telefon: {data['phone']}\n"
