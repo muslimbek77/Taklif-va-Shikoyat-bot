@@ -6,4 +6,5 @@ from . import taklif
 from . import location
 from . import our_courses
 from . import social_media
+from . import applycourse
 

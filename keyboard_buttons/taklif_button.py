@@ -47,3 +47,11 @@ social_keyboard = InlineKeyboardMarkup(
 
     ]
 )
+
+def course_apply_button(course):
+    my_apply_button = InlineKeyboardMarkup(
+        inline_keyboard=[
+            [InlineKeyboardButton(text="📥 Kursga yozilish", callback_data=f"apply_{course}")]
+        ]
+    )
+    return my_apply_button

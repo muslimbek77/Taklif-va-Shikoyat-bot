@@ -1,13 +1,16 @@
 from aiogram.types import Message,CallbackQuery
 from loader import dp,db,bot
 from aiogram import F
-from aiogram.fsm.context import FSMContext #new
+from aiogram.fsm.context import FSMContext 
 from states.reklama import ApplyCourseState
 from data.config import MY_GROUP
 
 
-@dp.callback_query(F.data.startswith("apply"))
+@dp.callback_query(F.data.startswith("apply_"))
 async def start_application(call: CallbackQuery, state: FSMContext):
+    course = call.data.replace("apply_", "")  
+    await state.update_data(course=course)
+
     await call.message.answer("👤 Ism familiyangizni kiriting:")
     await state.set_state(ApplyCourseState.full_name)
 

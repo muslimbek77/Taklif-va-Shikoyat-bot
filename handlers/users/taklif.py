@@ -4,6 +4,7 @@ from aiogram import F
 from aiogram.fsm.context import FSMContext #new
 from states.reklama import OfferState
 from data.config import MY_GROUP
+from keyboard_buttons.taklif_button import course_apply_button
 
 @dp.message(F.text == "📩 Murojaat")
 async def taklif_yubor(message:Message,state:FSMContext):
@@ -76,7 +77,7 @@ async def send_backend_course(message: Message):
 )
 
     
-    await message.answer_photo(photo=photo, caption=caption,parse_mode="html")
+    await message.answer_photo(photo=photo, caption=caption,parse_mode="html",reply_markup=course_apply_button(message.text))
 
 
 @dp.message(F.text == "🇸🇦 Arab tili")
@@ -128,7 +129,7 @@ async def send_arab_course(message: Message):
 👴 45–100 yosh – alohida metodika va darsliklar bilan
 """
 
-    await message.answer(text, parse_mode="HTML")
+    await message.answer(text, parse_mode="HTML",reply_markup=course_apply_button(message.text))
 
 
 @dp.message(F.text == "📚 Matematika")
@@ -179,7 +180,7 @@ async def math_course(message: Message):
 🖥 Interaktiv darslar  
 ❓ Savol-javoblar
 """
-    await message.answer_photo(photo=photo, caption=caption,parse_mode="html")
+    await message.answer_photo(photo=photo, caption=caption,parse_mode="html",reply_markup=course_apply_button(message.text))
 
 
 @dp.message(F.text == "🇬🇧 Ingliz tili")
@@ -238,7 +239,7 @@ async def english_course(message:Message):
 
 📢 <b>Ingliz tilini o‘rganish — bu investitsiya, hech qachon yo‘qotmaydigan boylik!</b>
 """
-    await message.answer(text=text,parse_mode="HTML")
+    await message.answer(text=text,parse_mode="HTML",reply_markup=course_apply_button(message.text))
 
 
 @dp.message(F.text == "🇩🇪 Nemis tili")
@@ -281,7 +282,7 @@ async def german_course(message:Message):
 🎯 <b>Natija:</b> Chet elda ishlash va o‘qish uchun zarur kuchli B1 va B2 daraja\n\n
 🎓 <i>Goethe, Milliy, Telc, ecl yoki ÖSD xalqaro sertifikat olish imkoniyati mavjud!</i>
 """
-    await message.answer(text=text, parse_mode="HTML")
+    await message.answer(text=text, parse_mode="HTML",reply_markup=course_apply_button(message.text))
 
 
 @dp.message(F.text == "🖌️ Grafik Dizayner")
@@ -318,7 +319,7 @@ async def graphic_designer(message:Message):
 💰 880 000 so‘mdan
 """
 
-    await message.answer_photo(photo=photo,caption=caption,parse_mode="HTML")
+    await message.answer_photo(photo=photo,caption=caption,parse_mode="HTML",reply_markup=course_apply_button(message.text))
 
 
 @dp.message(F.text == "🎨 Frontend")
@@ -353,7 +354,7 @@ Real mijozlar bilan ishlash
 Portfolio yig‘ish
 """
 
-    await message.answer_photo(photo=photo,caption=caption,parse_mode="HTML")
+    await message.answer_photo(photo=photo,caption=caption,parse_mode="HTML",reply_markup=course_apply_button(message.text))
 
 
 
@@ -417,7 +418,7 @@ Bu bosqichda kamera bilan ishlash kiritilmaydi – asosiy e’tibor nutq va sahn
 Ishtirokchi sahna va kamera qarshisida ishonchli, kreativ va professional tarzda o‘zini namoyon qila oladigan Face Brend egasiga aylanadi.
 
 🎓 Kurs yakunida Renessans Academy tomonidan rasmiy sertifikat taqdim etiladi, bu sizning malakangizni tasdiqlaydi va portfoliongizda kuchli asos bo‘ladi."""
-    await message.answer(text=text)
+    await message.answer(text=text,reply_markup=course_apply_button(message.text))
 
 @dp.message(F.text == "🎯 Target (Reklama Sozlash)")
 async def target_course(message:Message):
@@ -459,7 +460,7 @@ Ushbu 1 oylik “Target” kursi — sizni 0 dan boshlab, Facebook va Instagram 
 1 oy ichida siz mustaqil ishlay oladigan, haqiqiy mijozlar bilan ishlashga tayyor junior targetologga aylanasiz.
 
 🎓 Rasmiy sertifikat sizning bilim va ko‘nikmalaringizni tasdiqlaydi."""
-    await message.answer(text=text)
+    await message.answer(text=text,reply_markup=course_apply_button(message.text))
 
 
 @dp.message(F.text == "🇷🇺 Rus tili")
@@ -521,7 +522,7 @@ B2 – Ishlash/o‘qishga tayyor daraja
 ---
 
 """
-    await message.answer(text=text)
+    await message.answer(text=text,reply_markup=course_apply_button(message.text))
 
 @dp.message(F.text == "🇰🇷 Koreys tili")
 async def koreys_tili(message:Message):
@@ -569,7 +570,7 @@ Har kunlik  600 000 so‘m
 🎯 Natija: Chet elda ishlash va o‘qish uchun zarur Topik kamida 2급 daraja
 
 🎓Topik yoki Milliy serfikat olish imkoniyati mavjud!"""
-    await message.answer(text=text)
+    await message.answer(text=text,reply_markup=course_apply_button(message.text))
 
 @dp.message(F.text == "📱 Mobil dasturlash (Flutter)")
 async def flutter(message:Message):
@@ -599,5 +600,5 @@ async def flutter(message:Message):
 📌 Umumiy davomiylik: 7 oy
 🎯 Natija: Portfolio + Play Market uchun tayyor mobil dasturchi"""
     photo = "https://miro.medium.com/v2/resize:fit:1358/1*HDshl1dDafbaHQPxhtAj7g.jpeg"
-    await message.answer_photo(photo=photo,caption=text)
+    await message.answer_photo(photo=photo,caption=text,reply_markup=course_apply_button(message.text))
 
