@@ -460,3 +460,65 @@ Ushbu 1 oylik “Target” kursi — sizni 0 dan boshlab, Facebook va Instagram 
 
 🎓 Rasmiy sertifikat sizning bilim va ko‘nikmalaringizni tasdiqlaydi."""
     await message.answer(text=text)
+
+
+@dp.message(F.text == "🇷🇺 Rus tili")
+async def rus_tili(message:Message):
+    text = """🇷🇺 Rus tili kursi (1a dan 3b gacha)
+⸻
+
+🟠 3 oy – 1a, 1b: Rus tili asoslari
+
+🔤 Alifbo, oddiy gaplar, o‘zini tanishtirish, asosiy grammatik qoidalar, kundalik muloqotlar
+💰 Haftada 3 kun — 360000 so‘m
+Har kunlik — 620 000 so‘m
+
+⸻
+
+🔵 3 oy – 2a, 2b: Aniq grammatika va imtihon tayyorgarligi
+
+📌 Zamonlar, tushum qoliplari, o‘qib tushunish, eshitib anglash
+💰 Haftada 3 kun — 300 000 so‘m
+Har kunlik — 600 000 so‘m
+
+⸻
+
+🟠 3 oy – 3a, 3b: Insho, nutq va imtihonlarga tayyorgarlik
+
+🗂 Insholar yozish (sochineie), gapirish ko‘nikmalari (monolog va dialog), grammatikani mukammal o‘rganish
+💰 Haftada 3 kun — 420 000 so‘m
+Har kunlik — 800 000 so‘m
+
+⸻
+
+🔵 1 oy – Bakalavr va magistratura intervyusiga tayyorgarlik
+💰 700 000 so‘m
+
+⸻
+
+🎓 3 oy – A1/A2 rus tili imtihoniga tayyorgarlik
+
+📝 O‘qish, tinglash, test yechish mashg‘ulotlari
+💰 Har kunlik — 600 000 so‘m
+
+⸻
+
+📌 Kurs davomiyligi: 3 oydan 9 oygacha
+
+🎯 Natija: O‘qish va ishlash uchun zarur bo‘lgan rus tili darajasiga ega bo‘lish (A2/B1)
+
+🎓 Olish mumkin bo‘lgan sertifikatlar:
+• TRKI (TORFL – Test of Russian as a Foreign Language):
+A1 – Boshlang‘ich daraja
+A2 – Elementar daraja
+B1 – O‘rtacha daraja
+B2 – Ishlash/o‘qishga tayyor daraja
+• Pushkin instituti sertifikati
+• Mahalliy imtihon markazlaridan rus tili darajasi sertifikati
+
+📄 Xalqaro sertifikatlar Rossiya universitetlarida o‘qish va Rossiyada rasmiy ishlash uchun amal qiladi!
+
+---
+
+"""
+    await message.answer(text=text)
