@@ -358,7 +358,7 @@ Portfolio yig‘ish
 
 
 @dp.message(F.text == "🎭 Face Brend (Shaxsiy Brend) Kursi")
-async def german_course(message:Message):
+async def face_brand_course(message:Message):
     text = """🎭 Face Brend (Shaxsiy Brend) Kursi
 📍 Renessans Academy tomonidan tashkil etilgan amaliy va chuqurlashtirilgan kurs
 💸 Kurs narxi (to‘liq 5 oy): 1 500 000 so‘m
