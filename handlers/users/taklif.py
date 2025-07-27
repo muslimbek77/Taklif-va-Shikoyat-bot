@@ -354,3 +354,67 @@ Portfolio yig‘ish
 """
 
     await message.answer_photo(photo=photo,caption=caption,parse_mode="HTML")
+
+
+
+@dp.message(F.text == "🎭 Face Brend (Shaxsiy Brend) Kursi")
+async def german_course(message:Message):
+    text = """🎭 Face Brend (Shaxsiy Brend) Kursi
+📍 Renessans Academy tomonidan tashkil etilgan amaliy va chuqurlashtirilgan kurs
+💸 Kurs narxi (to‘liq 5 oy): 1 500 000 so‘m
+🗓 Darslar haftasiga 6 kun davom etadi — intensiv, natijaga yo‘naltirilgan yondashuv
+🎓 Kurs yakunida Renessans Academy tomonidan maxsus sertifikat taqdim etiladi
+
+⸻
+
+📌 Kurs haqida umumiy ma’lumot:
+
+“Face Brend” kursi — bu sizning nutq, aktyorlik va kontent yaratuvchanligingizni rivojlantirish orqali kuchli shaxsiy brendga aylanish imkonini beruvchi dastur. Kurs sahna va kamera oldida ishonchli chiqish, ijtimoiy tarmoqlarda sifatli kontent yaratish hamda o‘z uslubingizni topishga yo‘naltirilgan.
+
+📚 Kurs muallifi:
+Oliy ma’lumotli aktyor, 7 yillik aktyorlik va nutq texnikasi bo‘yicha tajriba, 4 yillik Face Brend yo‘nalishida faol amaliyotga ega.
+
+⸻
+
+🟠 1-oy: Nutq texnikasi va sahnadagi ishonch
+ • To‘g‘ri nafas, diksiyaning rivoji, talaffuz
+ • Emotsional ifoda, ishonchli chiqishlar
+ • Ichki tayyorgarlik va sahnadagi tabiiylik
+
+Bu bosqichda kamera bilan ishlash kiritilmaydi – asosiy e’tibor nutq va sahnadagi erkinlikka qaratiladi.
+
+⸻
+
+🔵 2-oy: Kamera bilan ishlash va aktyorlik mahorati
+ • Kamera oldida o‘zini tutish, ifoda, pozitsiya
+ • Monolog, she’r, sahnaviy parcha ijrosi
+ • Improvizatsiya, his-tuyg‘uni boshqarish va uzatish
+
+⸻
+
+🟠 3-oy: Ssenariy yozish va sun’iy intellekt bilan ishlash
+ • G‘oya yaratish, voqeani ssenariyga aylantirish
+ • ChatGPT kabi vositalar bilan ishlash: ma’lumot yig‘ish va tahlil
+ • Ssenariy strukturasini tuzish va uni ijroga tayyorlash
+
+⸻
+
+🔵 4–5-oy: Amaliyot va Portfolio
+ • Kamera oldida real chiqishlar, kontentlar tayyorlash
+ • Portfolio yaratish: aktyorlik chiqishlari, ijodiy loyihalar
+ • TikTok, Instagram va YouTube formatidagi ijodiy ishlar
+
+⸻
+
+🎁 Qo‘shimcha imkoniyatlar:
+
+🔹 Kurs davomida o‘zini ijobiy va kreativ tarzda ko‘rsatgan o‘quvchilarga Renessans Agency bilan hamkorlik asosida ishlash taklif qilinadi.
+🔹 Bu orqali o‘quvchi amaliy tajriba orttiradi va doimiy ijodiy loyihalarda ishtirok etish imkoniyatiga ega bo‘ladi.
+
+⸻
+
+🎯 Natija:
+Ishtirokchi sahna va kamera qarshisida ishonchli, kreativ va professional tarzda o‘zini namoyon qila oladigan Face Brend egasiga aylanadi.
+
+🎓 Kurs yakunida Renessans Academy tomonidan rasmiy sertifikat taqdim etiladi, bu sizning malakangizni tasdiqlaydi va portfoliongizda kuchli asos bo‘ladi."""
+    await message.answer(text=text)

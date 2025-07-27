@@ -25,7 +25,7 @@ our_course_btn = ReplyKeyboardMarkup(
         [KeyboardButton(text="⬅️ Asosiy menyuga qaytish")],
         [KeyboardButton(text="🛡️ Kiberxavfsizlik"), KeyboardButton(text="📱 Mobil dasturlash (Flutter)")],
         [KeyboardButton(text="💻 Backend"), KeyboardButton(text="🎨 Frontend")],
-        [KeyboardButton(text="🖌️ Grafik Dizayner"), KeyboardButton(text="📢 SMM")],
+        [KeyboardButton(text="🖌️ Grafik Dizayner"), KeyboardButton(text="🎭 Shaxsiy Brend (Face Brend)")],
         [KeyboardButton(text="🎥 Videografiya"), KeyboardButton(text="📚 Matematika")],
         [KeyboardButton(text="🇸🇦 Arab tili"), KeyboardButton(text="🇬🇧 Ingliz tili")],
         [KeyboardButton(text="🇩🇪 Nemis tili"), KeyboardButton(text="🇰🇷 Koreys tili")],
