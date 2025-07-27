@@ -42,6 +42,8 @@ social_keyboard = InlineKeyboardMarkup(
     inline_keyboard=[
         [InlineKeyboardButton(text="📱 Telegram", url="https://t.me/Renessans_Uzbekistan3")],
         [InlineKeyboardButton(text="📸 Instagram", url="https://www.instagram.com/3renessans_uzbekistan")],
-        [InlineKeyboardButton(text="▶️ YouTube", url="https://www.youtube.com/@3RenessansUzbekistan")]
+        [InlineKeyboardButton(text="▶️ YouTube", url="https://www.youtube.com/@3RenessansUzbekistan")],
+        [InlineKeyboardButton(text="🌐 Veb-sayt", url="https://3renessans.uz")],
+
     ]
 )
