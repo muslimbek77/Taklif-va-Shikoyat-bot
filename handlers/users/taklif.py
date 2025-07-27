@@ -570,3 +570,34 @@ Har kunlik  600 000 so‘m
 
 🎓Topik yoki Milliy serfikat olish imkoniyati mavjud!"""
     await message.answer(text=text)
+
+@dp.message(F.text == "📱 Mobil dasturlash (Flutter)")
+async def flutter(message:Message):
+    text ="""Flutter Dasturlash Kursi (0 dan professionalgacha)
+📱 Mobil ilovalarni yaratishni o‘rganing va IT orqali daromad toping!
+
+🟠 1-oy – Boshlang‘ich Dart
+🔤 O‘zgaruvchilar, if-else, funksiyalar, arifmetik va mantiqiy amallar
+💬 Oddiy tushunarli darslar bilan dasturlashni 0 dan boshlang!
+💰 600 000 so‘m
+
+🔵 2-3-oy – Dart va Flutter asoslari
+📱 UI elementlari: Container, Row, Column, Text, Button
+📌 List, Map, funksiyalar, Form validation, Navigatsiya
+💰 650 000 so‘m
+
+🟠 4-5-oy – Real loyihalar va API bilan ishlash
+🌐 REST API, JSON, state management (Provider)
+📲 Backend bilan bog‘langan haqiqiy ilovalar yaratish
+💰 700 000 so‘m
+
+🔵 6-7-oy – Firebase & Play Market tayyorgarlik
+🔥 Auth, Firestore, Realtime DB, portfolio yaratish, frilansga tayyorgarlik
+📈 Ish topish, startap ochish uchun tayyor holat
+💰 750 000 so‘m
+
+📌 Umumiy davomiylik: 7 oy
+🎯 Natija: Portfolio + Play Market uchun tayyor mobil dasturchi"""
+    photo = "https://miro.medium.com/v2/resize:fit:1358/1*HDshl1dDafbaHQPxhtAj7g.jpeg"
+    await message.answer_photo(photo=photo,caption=text)
+
