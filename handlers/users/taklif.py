@@ -522,3 +522,51 @@ B2 – Ishlash/o‘qishga tayyor daraja
 
 """
     await message.answer(text=text)
+
+@dp.message(F.text == "🇰🇷 Koreys tili")
+async def koreys_tili(message:Message):
+    text = """🇰🇷 Koreys tili kursi (1a dan 3b gacha)
+
+⸻
+
+🟠 3 oy – 1a, 1b: Koreys tili
+
+🔤 Alifbo, oddiy gaplar, o‘zini tanishtirish, asosiy grammatik qoidalar, kundalik suhbatlar
+💰  Haftada  3 kunlik 300 000 so‘m
+Har kunlik 600 000 so'm
+
+⸻
+
+🔵 3 oy – 2a,2b:Asosiy topik imtixonidagi gramatikalar
+
+📌  ZAMONLAR , QOIDALAR 듣기, 읽이 yani eshitib tushunish o'qib taxlil qilish
+💰Haftada 3 kunlik 300 000 so‘m
+Har kunlik 600 000 so'm
+⸻
+
+🟠 3 oy – 3a,3b: Topik 2 yani 3,4,5,6 급 tayyorlanish
+
+🗂 Grammatikani chuqurlashtirish, 쓰기 (insho) yozish, 말하기 (gapirish) rivojlantirish
+💰Haftada 3 kunlik dars 300 000 so'm
+Har kunlik  600 000 so‘m
+
+⸻
+
+🔵 1 oy – :Magistratura Bakalavr suhbatiga tayyorlash
+💰 700 000 so‘m
+
+⸻
+
+🎓 3 oy –Topik 1 Imtihonga tayyorgarlik
+
+📝 듣기, 읽이 tayyorlanish
+💰Har kuni  600 000 so‘m
+
+⸻
+
+📌 Davomiylik: 8 oydan 10 oygacha
+
+🎯 Natija: Chet elda ishlash va o‘qish uchun zarur Topik kamida 2급 daraja
+
+🎓Topik yoki Milliy serfikat olish imkoniyati mavjud!"""
+    await message.answer(text=text)
